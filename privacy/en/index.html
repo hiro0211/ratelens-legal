@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Privacy Policy — RateLens</title>
-  <meta name="description" content="Privacy Policy for RateLens: on-device text recognition, local history, exchange-rate requests, and Google AdMob." />
+  <title>Privacy Policy — RateLenz</title>
+  <meta name="description" content="Privacy Policy for RateLenz: on-device text recognition, local history, exchange-rate requests, Google AdMob, and RevenueCat." />
   <link rel="alternate" hreflang="ja" href="https://hiro0211.github.io/ratelens-legal/privacy/ja/" />
   <link rel="alternate" hreflang="en" href="https://hiro0211.github.io/ratelens-legal/privacy/en/" />
   <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
@@ -14,7 +14,7 @@
   <header class="site-header">
     <a class="brand" href="../../">
       <img src="../../assets/icons/favicon.svg" alt="" />
-      <span>RateLens</span>
+      <span>RateLenz</span>
     </a>
     <nav class="lang-switch" aria-label="Language">
       <a href="../ja/" hreflang="ja">JP</a>
@@ -26,7 +26,7 @@
     <div class="hero">
       <p class="eyebrow">Privacy Policy</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective: 2026-10-23 / Last updated: 2026-10-23</p>
+      <p class="meta">Effective: 2026-10-23 / Last updated: 2026-11-13</p>
     </div>
 
     <nav class="toc" aria-label="Contents">
@@ -36,9 +36,9 @@
         <li><a href="#s2">Camera and Photos</a></li>
         <li><a href="#s3">Information Stored Only on Your Device</a></li>
         <li><a href="#s4">Exchange Rates</a></li>
-        <li><a href="#s5">Advertising (Google AdMob)</a></li>
+        <li><a href="#s5">Advertising (Google AdMob) and Tracking</a></li>
         <li><a href="#s6">Ad Consent (EEA, UK, etc.)</a></li>
-        <li><a href="#s7">Purchases (RateLens Pro)</a></li>
+        <li><a href="#s7">Paid Plan (RateLenz Premium) and RevenueCat</a></li>
         <li><a href="#s8">Information You Give Us When You Contact Us</a></li>
         <li><a href="#s9">Information We Do Not Collect</a></li>
         <li><a href="#s10">Children</a></li>
@@ -50,33 +50,34 @@
 
     <section class="legal" id="s1">
       <h2><span class="num">1</span>Introduction</h2>
-<p>This Privacy Policy ("Policy") explains how information is handled in "RateLens" for iOS and Android (the "App"). The App is provided by an independent developer ("the developer," "we," "us").</p>
-      <p>The App reads prices on price tags in your camera view or photos and shows them converted into the currency you choose. There is no account registration. The developer does not operate any server and never asks you to enter your name, address, or phone number.</p>
+<p>This Privacy Policy ("Policy") explains how information is handled in the app "RateLenz" (the "App"). The App is provided by an independent developer ("the developer," "we," "us").</p>
+      <p>The App reads prices on price tags in your camera view and shows them converted into the currency you choose. There is no account registration or sign-in. The developer does not operate its own server and never asks you to enter your name, address, or phone number.</p>
+      <p>The App uses Google AdMob to serve ads and RevenueCat to manage purchases of the paid plan. Sections 5 to 7 explain what information is sent to these services.</p>
     </section>
 
     <section class="legal" id="s2">
       <h2><span class="num">2</span>Camera and Photos</h2>
 <ul>
-        <li>Text in the camera view and in photos you choose is recognized entirely on your device using Google ML Kit text recognition. Camera images and photos are never sent to the developer or to any third-party server.</li>
-        <li>The App reads only the single photo you pick from your photo library. It does not read your whole library.</li>
+        <li>Text on price tags is recognized on your device. On iOS, the App uses Apple's Vision framework. The Android version uses Google ML Kit text recognition on the device.</li>
+        <li>Camera images, photos, and the recognized text and amounts are never sent to the developer or to any third-party server.</li>
+        <li>When you convert from a photo, the App reads only the single photo you pick from your photo library. It does not read your whole library.</li>
         <li>The camera and photos are used only after you allow access in the system permission prompt. You can withdraw permission at any time in your device settings.</li>
-        <li>According to Google, ML Kit may send metrics about the performance and use of its features (such as device information) to Google. These metrics do not include images or recognized text. See the <a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">ML Kit Terms</a>.</li>
       </ul>
     </section>
 
     <section class="legal" id="s3">
       <h2><span class="num">3</span>Information Stored Only on Your Device</h2>
 <ul>
-        <li>Conversion history (a copy of the photo you took or chose, the amounts read, the currencies, and the date of the rate used). Up to 200 entries are kept; the oldest are deleted automatically.</li>
-        <li>The most recently downloaded exchange rates (used when you are offline)</li>
-        <li>Settings such as your chosen currency, and timestamps used to space out ads</li>
+        <li>Conversion history: a copy of the photo you took, the amounts read, the currencies, and the date of the rate used. Up to 200 entries are kept, and the oldest are deleted automatically.</li>
+        <li>The most recently downloaded exchange rates, used when you are offline.</li>
+        <li>Settings such as your chosen currency, the number of scans you made that day, and timestamps used to space out ads.</li>
       </ul>
       <p>This information is stored only in the App's private storage on your device and is never sent to the developer or to third parties. You can delete history entries one by one in the App. Uninstalling the App deletes all of it. Because we do not have this information, we cannot restore or delete it for you.</p>
     </section>
 
     <section class="legal" id="s4">
       <h2><span class="num">4</span>Exchange Rates</h2>
-<p>To get exchange rates for conversion, the App connects to the public services below. The second is used only when the first cannot be reached.</p>
+<p>The App downloads the exchange rates used for conversion from the public services below. The second is used only when the first cannot be reached.</p>
       <ul>
         <li>Frankfurter (api.frankfurter.dev) — <a href="https://frankfurter.dev/" target="_blank" rel="noopener">about the service</a></li>
         <li>currency-api (latest.currency-api.pages.dev) — <a href="https://github.com/fawazahmed0/exchange-api" target="_blank" rel="noopener">about the service</a></li>
@@ -85,33 +86,41 @@
     </section>
 
     <section class="legal" id="s5">
-      <h2><span class="num">5</span>Advertising (Google AdMob)</h2>
-<p>The App shows banner ads, interstitial (full-screen) ads, and rewarded ads (ads you may choose to watch to see all of your history for a limited time) through Google AdMob, using the Google Mobile Ads SDK. To serve ads, the following information is sent from your device to Google and handled by Google:</p>
+      <h2><span class="num">5</span>Advertising (Google AdMob) and Tracking</h2>
+<p>The App shows two kinds of ads through Google AdMob, using the Google Mobile Ads SDK: interstitial (full-screen) ads, and rewarded ads that you may choose to watch to get more scans for the day. To serve ads, your device sends the following information to Google, and Google handles it:</p>
       <ul>
-        <li>Identifiers such as advertising IDs (on Android, the advertising ID and App Set ID)</li>
-        <li>IP address (which may be used to estimate your approximate location)</li>
-        <li>Device and app information (model, operating system and version, language, app version, etc.)</li>
-        <li>Ad interactions such as impressions, taps, and video views</li>
-        <li>Diagnostic information about the SDK</li>
+        <li>Advertising identifiers. On iOS, the IDFA (Identifier for Advertisers) is sent only if you allow tracking. On Android, the advertising ID and App Set ID are sent.</li>
+        <li>IP address, which Google may use to estimate your approximate location.</li>
+        <li>Advertising data and interactions, such as impressions, taps, and video views.</li>
+        <li>Device and app information, such as model, operating system and version, language, and app version.</li>
+        <li>Diagnostic data about the SDK's performance, crashes, and errors.</li>
       </ul>
-      <p>The App does not ask for tracking permission through iOS App Tracking Transparency (ATT), so the IDFA is not used on iOS.</p>
+      <p>On iOS, the App asks for permission to track you through App Tracking Transparency (ATT). If you allow it, Google may use the IDFA to show ads tailored to you, combined with your activity in other companies' apps and websites. If you do not allow it, you can still use every feature of the App, and the IDFA is not sent. You can change your choice later in Settings → Privacy &amp; Security → Tracking.</p>
+      <p>While you have an active paid plan, the App does not show ads.</p>
       <p>To learn how Google uses this information, see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>, <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Advertising at Google</a>, and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
     </section>
 
     <section class="legal" id="s6">
       <h2><span class="num">6</span>Ad Consent (EEA, UK, etc.)</h2>
-<p>In regions where the law requires consent, such as the European Economic Area (EEA), the United Kingdom, and Switzerland, the App uses Google's User Messaging Platform (UMP SDK) to ask for your consent to the use of information for advertising when you open the App, in line with <a href="https://www.google.com/about/company/user-consent-policy/" target="_blank" rel="noopener">Google's EU User Consent Policy</a>.</p>
+<p>In regions where the law requires consent, such as the European Economic Area (EEA), the United Kingdom, and Switzerland, the App uses Google's User Messaging Platform (UMP SDK). When you first use the App, it asks for your consent to the use of information for advertising, in line with <a href="https://www.google.com/about/company/user-consent-policy/" target="_blank" rel="noopener">Google's EU User Consent Policy</a>.</p>
       <ul>
         <li>You can use the App without consenting. In that case, Google shows non-personalized or limited ads.</li>
-        <li>Your consent status is stored on your device. If you uninstall and reinstall the App, you will be asked again.</li>
-        <li>If you live in the EEA or a similar region, you have rights under the GDPR, including access, rectification, erasure, restriction, objection, and withdrawal of consent. Because the developer does not hold advertising data, you can also exercise your rights for data held by Google through the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+        <li>Your consent status is stored on your device. In these regions, you can change your choices from the App's settings screen.</li>
+        <li>If you live in the EEA or a similar region, you have rights under the GDPR, including access, rectification, erasure, restriction, objection, and withdrawal of consent. The developer does not hold advertising data. For data held by Google, you can also use the procedures in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
       </ul>
       <p>On Android, you can reset or delete your advertising ID in your device settings (on many devices, Settings → Google → Ads). Menu names vary by device.</p>
     </section>
 
     <section class="legal" id="s7">
-      <h2><span class="num">7</span>Purchases (RateLens Pro)</h2>
-<p>We plan to offer a paid plan, "RateLens Pro" (a one-time purchase or an annual auto-renewing subscription). If we do, payments will be processed by Apple (App Store) or Google (Google Play). The developer never receives your credit card or other payment details. Store purchase records are used to confirm your purchase status.</p>
+      <h2><span class="num">7</span>Paid Plan (RateLenz Premium) and RevenueCat</h2>
+<p>The App offers a paid plan, "RateLenz Premium." Payments are processed by Apple (App Store) or Google (Google Play). The developer never receives your credit card or other payment details.</p>
+      <p>To confirm your purchase status, the App uses the RevenueCat SDK provided by RevenueCat, Inc. The following information is sent to RevenueCat:</p>
+      <ul>
+        <li>Purchase history, such as the plan you bought, purchase and renewal dates, and store transaction information.</li>
+        <li>An anonymous App User ID that the App creates automatically for each device. It is not linked to your name or email address.</li>
+        <li>Device and app information, such as operating system version, app version, country or region, and language.</li>
+      </ul>
+      <p>The developer uses this information to confirm and restore purchases and to total sales. It is not used for advertising or tracking. To learn how RevenueCat handles information, see the <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</p>
     </section>
 
     <section class="legal" id="s8">
@@ -124,7 +133,8 @@
 <ul>
         <li>Your name, address, or phone number (unless you include them in a message to us)</li>
         <li>Contacts, microphone, or precise (GPS) location</li>
-        <li>Data from analytics or crash-reporting tools (the App currently uses none; we will update this Policy if that changes)</li>
+        <li>Camera images, photos, recognized text and amounts, or conversion history</li>
+        <li>Data from analytics or crash-reporting tools added by the developer (the App currently uses none; we will update this Policy if that changes)</li>
       </ul>
       <p>We do not sell your personal information for money.</p>
     </section>
@@ -136,19 +146,19 @@
 
     <section class="legal" id="s11">
       <h2><span class="num">11</span>International Processing</h2>
-<p>Because we use services such as Google, information may be processed in data centers outside Japan, including in the United States.</p>
+<p>Because the App uses services from Google and RevenueCat, information may be processed in data centers outside Japan, including in the United States.</p>
     </section>
 
     <section class="legal" id="s12">
       <h2><span class="num">12</span>Changes to This Policy</h2>
-<p>We may update this Policy when laws change or when we add features (such as starting to offer the paid plan). When we do, we will change the "Last updated" date on this page.</p>
+<p>We may update this Policy when laws change or when we add features. When we do, we will change the "Last updated" date on this page.</p>
     </section>
 
     <section class="legal" id="s13">
       <h2><span class="num">13</span>Developer Information and Contact</h2>
-<p>Provider: the developer of RateLens (an individual)</p>
+<p>Provider: the developer of RateLenz (an individual)</p>
       <p>For questions about this Policy or how information is handled, to exercise your rights, or to request deletion, please email:</p>
-      <p><a class="contact" href="mailto:appsupport0326@gmail.com?subject=RateLens%20Privacy">appsupport0326@gmail.com</a></p>
+      <p><a class="contact" href="mailto:appsupport0326@gmail.com?subject=RateLenz%20Privacy">appsupport0326@gmail.com</a></p>
       <p>If this English version differs from the Japanese version, the Japanese version prevails.</p>
     </section>
   </main>
@@ -159,7 +169,7 @@
       <a href="../../terms/en/">Terms of Use</a>
       <a href="../ja/">日本語</a>
     </div>
-    <div>© 2026 RateLens · Effective: 2026-10-23</div>
+    <div>© 2026 RateLenz · Effective: 2026-10-23 · Last updated: 2026-11-13</div>
   </footer>
 </body>
 </html>
