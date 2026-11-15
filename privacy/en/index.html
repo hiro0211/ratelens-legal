@@ -26,7 +26,7 @@
     <div class="hero">
       <p class="eyebrow">Privacy Policy</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective: 2026-10-23 / Last updated: 2026-11-13</p>
+      <p class="meta">Effective: 2026-10-23 / Last updated: 2026-11-15</p>
     </div>
 
     <nav class="toc" aria-label="Contents">
@@ -43,14 +43,15 @@
         <li><a href="#s9">Information We Do Not Collect</a></li>
         <li><a href="#s10">Children</a></li>
         <li><a href="#s11">International Processing</a></li>
-        <li><a href="#s12">Changes to This Policy</a></li>
-        <li><a href="#s13">Developer Information and Contact</a></li>
+        <li><a href="#deletion">Deleting Your Data</a></li>
+        <li><a href="#s13">Changes to This Policy</a></li>
+        <li><a href="#s14">Developer Information and Contact</a></li>
       </ol>
     </nav>
 
     <section class="legal" id="s1">
       <h2><span class="num">1</span>Introduction</h2>
-<p>This Privacy Policy ("Policy") explains how information is handled in the app "RateLenz" (the "App"). The App is provided by an independent developer ("the developer," "we," "us").</p>
+<p>This Privacy Policy ("Policy") explains how information is handled in the app "RateLenz" (the "App"). The App is provided by Hiroaki Arimura ("the developer," "we," "us").</p>
       <p>The App reads prices on price tags in your camera view and shows them converted into the currency you choose. There is no account registration or sign-in. The developer does not operate its own server and never asks you to enter your name, address, or phone number.</p>
       <p>The App uses Google AdMob to serve ads and RevenueCat to manage purchases of the paid plan. Sections 5 to 7 explain what information is sent to these services.</p>
     </section>
@@ -60,8 +61,10 @@
 <ul>
         <li>Text on price tags is recognized on your device. On iOS, the App uses Apple's Vision framework. The Android version uses Google ML Kit text recognition on the device.</li>
         <li>Camera images, photos, and the recognized text and amounts are never sent to the developer or to any third-party server.</li>
-        <li>When you convert from a photo, the App reads only the single photo you pick from your photo library. It does not read your whole library.</li>
-        <li>The camera and photos are used only after you allow access in the system permission prompt. You can withdraw permission at any time in your device settings.</li>
+        <li>When you convert from a photo, the App reads only the single photo you pick. It does not read your whole library.</li>
+        <li>On iOS, you pick one photo from your photo library. The camera and photos are used only after you allow access in the system permission prompt.</li>
+        <li>On Android, the App uses the system photo picker, and only the one photo you pick is passed to the App. The App does not request photo permissions on Android. The camera is used only after you allow access in the system permission prompt.</li>
+        <li>You can withdraw camera and other permissions at any time in your device settings.</li>
       </ul>
     </section>
 
@@ -72,7 +75,9 @@
         <li>The most recently downloaded exchange rates, used when you are offline.</li>
         <li>Settings such as your chosen currency, the number of scans you made that day, and timestamps used to space out ads.</li>
       </ul>
-      <p>This information is stored only in the App's private storage on your device and is never sent to the developer or to third parties. You can delete history entries one by one in the App. Uninstalling the App deletes all of it. Because we do not have this information, we cannot restore or delete it for you.</p>
+      <p>This information is stored only in the App's private storage on your device and is never sent to the developer or to third parties. You can delete history entries one by one in the App. Uninstalling the App deletes all of it.</p>
+      <p>Depending on your device's backup settings, this information may be included in your device backup: Google's backup on Android, or iCloud Backup on iPhone. These backups are stored by Google or Apple, and the developer cannot see them. If you do not want this information kept in a backup, turn off backup in your device settings or delete the backup.</p>
+      <p>The developer does not have the on-device information described in this section, so we cannot restore or delete it for you. To delete purchase information (Section 7), see <a href="#deletion">Section 12</a>.</p>
     </section>
 
     <section class="legal" id="s4">
@@ -89,7 +94,7 @@
       <h2><span class="num">5</span>Advertising (Google AdMob) and Tracking</h2>
 <p>The App shows two kinds of ads through Google AdMob, using the Google Mobile Ads SDK: interstitial (full-screen) ads, and rewarded ads that you may choose to watch to get more scans for the day. To serve ads, your device sends the following information to Google, and Google handles it:</p>
       <ul>
-        <li>Advertising identifiers. On iOS, the IDFA (Identifier for Advertisers) is sent only if you allow tracking. On Android, the advertising ID and App Set ID are sent.</li>
+        <li>Advertising identifiers. On iOS, the IDFA (Identifier for Advertisers) is sent only if you allow tracking. On Android, the advertising ID and App Set ID are sent. If you delete your advertising ID in your device settings, the App no longer sends it. See the end of Section 6 for how to delete or reset it.</li>
         <li>IP address, which Google may use to estimate your approximate location.</li>
         <li>Advertising data and interactions, such as impressions, taps, and video views.</li>
         <li>Device and app information, such as model, operating system and version, language, and app version.</li>
@@ -111,6 +116,11 @@
         <li>If you live in the EEA or a similar region, you have rights under the GDPR, including access, rectification, erasure, restriction, objection, and withdrawal of consent. The developer does not hold advertising data. For data held by Google, you can also use the procedures in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
       </ul>
       <p>On Android, you can reset or delete your advertising ID in your device settings (on many devices, Settings → Google → Ads). Menu names vary by device.</p>
+      <ul>
+        <li>Resetting gives you a new advertising ID that is not linked to the previous one.</li>
+        <li>Deleting replaces your advertising ID with a string of zeros, and the App no longer sends an advertising ID.</li>
+        <li>On Android, Google's Privacy Sandbox features (such as ad topics) may be used for ads. You can turn them off under "Ad privacy" in your device settings.</li>
+      </ul>
     </section>
 
     <section class="legal" id="s7">
@@ -152,14 +162,30 @@
     </section>
 
     <section class="legal" id="s12">
-      <h2><span class="num">12</span>Changes to This Policy</h2>
-<p>We may update this Policy when laws change or when we add features. When we do, we will change the "Last updated" date on this page.</p>
+      <h2 id="deletion"><span class="num">12</span>Deleting Your Data</h2>
+<p>The App has no accounts. You can delete each type of information as follows:</p>
+      <ul>
+        <li>Information on your device (conversion history, exchange rates, and settings). You can delete history entries one by one in the App. Uninstalling the App deletes all of it. If it remains in a device backup, please delete that backup as well (Section 3).</li>
+        <li>Purchase information (RevenueCat). Email us at the address below to request deletion, and the developer will delete the purchase information recorded in RevenueCat.</li>
+        <li>Advertising information (Google). The developer does not hold advertising data. You can delete or reset your advertising ID in your device settings (Section 6). For data held by Google, you can request deletion through Google's procedures.</li>
+      </ul>
+      <p>When you request deletion of purchase information, please include one of the following in your email so that we can find your purchase:</p>
+      <ul>
+        <li>Android: your Google Play order number (it starts with "GPA."). You can find it in the purchase confirmation email from Google Play.</li>
+        <li>iPhone: the order ID on your App Store receipt. You can find it in the receipt email from Apple.</li>
+      </ul>
+      <p>We aim to reply within 14 days of receiving your request. Deleting purchase information does not cancel a subscription; please cancel through your store (Terms of Use, Section 5). If you use "Restore Purchases" after deletion, your purchase information will be recorded in RevenueCat again.</p>
     </section>
 
     <section class="legal" id="s13">
-      <h2><span class="num">13</span>Developer Information and Contact</h2>
-<p>Provider: the developer of RateLenz (an individual)</p>
-      <p>For questions about this Policy or how information is handled, to exercise your rights, or to request deletion, please email:</p>
+      <h2><span class="num">13</span>Changes to This Policy</h2>
+<p>We may update this Policy when laws change or when we add features. When we do, we will change the "Last updated" date on this page.</p>
+    </section>
+
+    <section class="legal" id="s14">
+      <h2><span class="num">14</span>Developer Information and Contact</h2>
+<p>Provider: Hiroaki Arimura</p>
+      <p>For questions about this Policy or how information is handled, to exercise your rights, or to request deletion, please email the address below. For what to include in a deletion request, see <a href="#deletion">Section 12</a>.</p>
       <p><a class="contact" href="mailto:support@defactotech.app?subject=RateLenz%20Privacy">support@defactotech.app</a></p>
       <p>If this English version differs from the Japanese version, the Japanese version prevails.</p>
     </section>
@@ -171,7 +197,7 @@
       <a href="../../terms/en/">Terms of Use</a>
       <a href="../ja/">日本語</a>
     </div>
-    <div>© 2026 RateLenz · Effective: 2026-10-23 · Last updated: 2026-11-13</div>
+    <div>© 2026 RateLenz · Effective: 2026-10-23 · Last updated: 2026-11-15</div>
   </footer>
 </body>
 </html>
