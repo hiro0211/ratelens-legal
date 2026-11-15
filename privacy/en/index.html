@@ -42,7 +42,7 @@
         <li><a href="#s8">Information You Give Us When You Contact Us</a></li>
         <li><a href="#s9">Information We Do Not Collect</a></li>
         <li><a href="#s10">Children</a></li>
-        <li><a href="#s11">International Processing</a></li>
+        <li><a href="#s11">Encryption in Transit and International Processing</a></li>
         <li><a href="#deletion">Deleting Your Data</a></li>
         <li><a href="#s13">Changes to This Policy</a></li>
         <li><a href="#s14">Developer Information and Contact</a></li>
@@ -51,7 +51,7 @@
 
     <section class="legal" id="s1">
       <h2><span class="num">1</span>Introduction</h2>
-<p>This Privacy Policy ("Policy") explains how information is handled in the app "RateLenz" (the "App"). The App is provided by Hiroaki Arimura ("the developer," "we," "us").</p>
+<p>This Privacy Policy ("Policy") explains how information is handled in the app "RateLenz" (the "App"). The App is provided by DefactoTech (Hiroaki Arimura) ("the developer," "we," "us").</p>
       <p>The App reads prices on price tags in your camera view and shows them converted into the currency you choose. There is no account registration or sign-in. The developer does not operate its own server and never asks you to enter your name, address, or phone number.</p>
       <p>The App uses Google AdMob to serve ads and RevenueCat to manage purchases of the paid plan. Sections 5 to 7 explain what information is sent to these services.</p>
     </section>
@@ -60,7 +60,8 @@
       <h2><span class="num">2</span>Camera and Photos</h2>
 <ul>
         <li>Text on price tags is recognized on your device. On iOS, the App uses Apple's Vision framework. The Android version uses Google ML Kit text recognition on the device.</li>
-        <li>Camera images, photos, and the recognized text and amounts are never sent to the developer or to any third-party server.</li>
+        <li>Camera images, photos, and the recognized text and amounts are never sent to the developer or to any third-party server. In the Android version, which uses ML Kit, images are only read on the device and are not sent to Google.</li>
+        <li>However, the ML Kit library included in the Android version itself sends the following information to Google for diagnostics and usage analytics: device information (manufacturer, model, and OS version), app information (package name and version), per-installation identifiers, performance metrics, configuration, and error codes. According to Google, this information is encrypted in transit using HTTPS and is not transferred to third parties. For details, see <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener">ML Kit's data disclosure</a>.</li>
         <li>When you convert from a photo, the App reads only the single photo you pick. It does not read your whole library.</li>
         <li>On iOS, you pick one photo from your photo library. The camera and photos are used only after you allow access in the system permission prompt.</li>
         <li>On Android, the App uses the system photo picker, and only the one photo you pick is passed to the App. The App does not request photo permissions on Android. The camera is used only after you allow access in the system permission prompt.</li>
@@ -74,9 +75,15 @@
         <li>Conversion history: a copy of the photo you took, the amounts read, the currencies, and the date of the rate used. Up to 200 entries are kept, and the oldest are deleted automatically.</li>
         <li>The most recently downloaded exchange rates, used when you are offline.</li>
         <li>Settings such as your chosen currency, the number of scans you made that day, and timestamps used to space out ads.</li>
+        <li>The time you first opened the App, and a cached record of whether you have the paid plan.</li>
       </ul>
-      <p>This information is stored only in the App's private storage on your device and is never sent to the developer or to third parties. You can delete history entries one by one in the App. Uninstalling the App deletes all of it.</p>
-      <p>Depending on your device's backup settings, this information may be included in your device backup: Google's backup on Android, or iCloud Backup on iPhone. These backups are stored by Google or Apple, and the developer cannot see them. If you do not want this information kept in a backup, turn off backup in your device settings or delete the backup.</p>
+      <p>This information is stored only in the App's private storage on your device and is never sent to the developer or to third parties. You can delete history entries one by one in the App.</p>
+      <p>Backups and deletion work differently on Android and iPhone:</p>
+      <ul>
+        <li>Android: The App excludes this information from Google's backup. It is also not carried over when you transfer data to a new device. Uninstalling the App deletes all of it.</li>
+        <li>iPhone: Depending on your device settings, history and settings may be included in iCloud Backup or in a backup on your computer. iCloud Backup is stored by Apple, and the developer cannot see it. If you do not want this information kept in a backup, turn off backup for the App in your device settings or delete the backup.</li>
+        <li>iPhone: The number of scans that day, the ad-spacing timestamps, the time you first opened the App, and the cached purchase status are stored in the iPhone keychain, so that deleting and reinstalling the App does not reset your scan count. Keychain information may remain on your device after you uninstall the App, and may also be included in backups.</li>
+      </ul>
       <p>The developer does not have the on-device information described in this section, so we cannot restore or delete it for you. To delete purchase information (Section 7), see <a href="#deletion">Section 12</a>.</p>
     </section>
 
@@ -95,7 +102,7 @@
 <p>The App shows two kinds of ads through Google AdMob, using the Google Mobile Ads SDK: interstitial (full-screen) ads, and rewarded ads that you may choose to watch to get more scans for the day. To serve ads, your device sends the following information to Google, and Google handles it:</p>
       <ul>
         <li>Advertising identifiers. On iOS, the IDFA (Identifier for Advertisers) is sent only if you allow tracking. On Android, the advertising ID and App Set ID are sent. If you delete your advertising ID in your device settings, the App no longer sends it. See the end of Section 6 for how to delete or reset it.</li>
-        <li>IP address, which Google may use to estimate your approximate location.</li>
+        <li>IP address, which Google may use to estimate your approximate location. Google uses this information for advertising, analytics, and fraud prevention.</li>
         <li>Advertising data and interactions, such as impressions, taps, and video views.</li>
         <li>Device and app information, such as model, operating system and version, language, and app version.</li>
         <li>Diagnostic data about the SDK's performance, crashes, and errors.</li>
@@ -133,6 +140,12 @@
         <li>Device and app information, such as operating system version, app version, country or region, and language.</li>
       </ul>
       <p>The developer uses this information to confirm and restore purchases and to total sales. It is not used for advertising or tracking. To learn how RevenueCat handles information, see the <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</p>
+      <p>Purchase information is retained as follows:</p>
+      <ul>
+        <li>The developer keeps purchase information in RevenueCat without a fixed end date, so that purchases can be restored and subscription status can be checked. When you ask us to delete it, we delete it as described in <a href="#deletion">Section 12</a>.</li>
+        <li>According to RevenueCat's documentation, when the developer deletes a customer, all of that customer's data, including purchase history, is cleared. RevenueCat processes the deletion asynchronously.</li>
+        <li>How long RevenueCat keeps information in backups or elsewhere follows RevenueCat's own policies. RevenueCat's Privacy Policy states that it retains personal data only as necessary to comply with its legal obligations.</li>
+      </ul>
     </section>
 
     <section class="legal" id="s8">
@@ -157,15 +170,16 @@
     </section>
 
     <section class="legal" id="s11">
-      <h2><span class="num">11</span>International Processing</h2>
-<p>Because the App uses services from Google and RevenueCat, information may be processed in data centers outside Japan, including in the United States.</p>
+      <h2><span class="num">11</span>Encryption in Transit and International Processing</h2>
+<p>All of the App's network communication is encrypted using HTTPS (TLS). This covers communication with the exchange-rate services, Google (AdMob and ML Kit), and RevenueCat.</p>
+      <p>Because the App uses services from Google and RevenueCat, information may be processed in data centers outside Japan, including in the United States.</p>
     </section>
 
     <section class="legal" id="s12">
       <h2 id="deletion"><span class="num">12</span>Deleting Your Data</h2>
 <p>The App has no accounts. You can delete each type of information as follows:</p>
       <ul>
-        <li>Information on your device (conversion history, exchange rates, and settings). You can delete history entries one by one in the App. Uninstalling the App deletes all of it. If it remains in a device backup, please delete that backup as well (Section 3).</li>
+        <li>Information on your device (conversion history, exchange rates, and settings). You can delete history entries one by one in the App. On Android, uninstalling the App deletes all of it. On iPhone, the scan count and other information stored in the keychain may remain on the device. If information remains in an iPhone backup, please delete that backup as well (Section 3).</li>
         <li>Purchase information (RevenueCat). Email us at the address below to request deletion, and the developer will delete the purchase information recorded in RevenueCat.</li>
         <li>Advertising information (Google). The developer does not hold advertising data. You can delete or reset your advertising ID in your device settings (Section 6). For data held by Google, you can request deletion through Google's procedures.</li>
       </ul>
@@ -184,7 +198,7 @@
 
     <section class="legal" id="s14">
       <h2><span class="num">14</span>Developer Information and Contact</h2>
-<p>Provider: Hiroaki Arimura</p>
+<p>Provider: DefactoTech (Hiroaki Arimura)</p>
       <p>For questions about this Policy or how information is handled, to exercise your rights, or to request deletion, please email the address below. For what to include in a deletion request, see <a href="#deletion">Section 12</a>.</p>
       <p><a class="contact" href="mailto:support@defactotech.app?subject=RateLenz%20Privacy">support@defactotech.app</a></p>
       <p>If this English version differs from the Japanese version, the Japanese version prevails.</p>
