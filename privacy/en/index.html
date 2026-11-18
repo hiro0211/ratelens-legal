@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Privacy Policy — RateLenz</title>
-  <meta name="description" content="Privacy Policy for RateLenz: on-device text recognition, local history, exchange-rate requests, Google AdMob, and RevenueCat." />
+  <meta name="description" content="Privacy Policy for RateLenz: on-device text recognition, local history, exchange-rate requests, Google AdMob, RevenueCat, and Firebase Analytics." />
   <link rel="alternate" hreflang="ja" href="https://hiro0211.github.io/ratelens-legal/privacy/ja/" />
   <link rel="alternate" hreflang="en" href="https://hiro0211.github.io/ratelens-legal/privacy/en/" />
   <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
@@ -26,7 +26,7 @@
     <div class="hero">
       <p class="eyebrow">Privacy Policy</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective: 2026-10-23 / Last updated: 2026-11-15</p>
+      <p class="meta">Effective: 2026-10-23 / Last updated: 2026-11-18</p>
     </div>
 
     <nav class="toc" aria-label="Contents">
@@ -39,6 +39,7 @@
         <li><a href="#s5">Advertising (Google AdMob) and Tracking</a></li>
         <li><a href="#s6">Ad Consent (EEA, UK, etc.)</a></li>
         <li><a href="#s7">Paid Plan (RateLenz Premium) and RevenueCat</a></li>
+        <li><a href="#analytics">Usage Analytics (Firebase Analytics)</a></li>
         <li><a href="#s8">Information You Give Us When You Contact Us</a></li>
         <li><a href="#s9">Information We Do Not Collect</a></li>
         <li><a href="#s10">Children</a></li>
@@ -53,7 +54,7 @@
       <h2><span class="num">1</span>Introduction</h2>
 <p>This Privacy Policy ("Policy") explains how information is handled in the app "RateLenz" (the "App"). The App is provided by DefactoTech (Hiroaki Arimura) ("the developer," "we," "us").</p>
       <p>The App reads prices on price tags in your camera view and shows them converted into the currency you choose. There is no account registration or sign-in. The developer does not operate its own server and never asks you to enter your name, address, or phone number.</p>
-      <p>The App uses Google AdMob to serve ads and RevenueCat to manage purchases of the paid plan. Sections 5 to 7 explain what information is sent to these services.</p>
+      <p>The App uses Google AdMob to serve ads and RevenueCat to manage purchases of the paid plan, and Google's Firebase Analytics to understand how the App is used. Sections 5 to 8 explain what information is sent to these services.</p>
     </section>
 
     <section class="legal" id="s2">
@@ -84,7 +85,7 @@
         <li>iPhone: Depending on your device settings, history and settings may be included in iCloud Backup or in a backup on your computer. iCloud Backup is stored by Apple, and the developer cannot see it. If you do not want this information kept in a backup, turn off backup for the App in your device settings or delete the backup.</li>
         <li>iPhone: The number of scans that day, the ad-spacing timestamps, the time you first opened the App, and the cached purchase status are stored in the iPhone keychain, so that deleting and reinstalling the App does not reset your scan count. Keychain information may remain on your device after you uninstall the App, and may also be included in backups.</li>
       </ul>
-      <p>The developer does not have the on-device information described in this section, so we cannot restore or delete it for you. To delete purchase information (Section 7), see <a href="#deletion">Section 12</a>.</p>
+      <p>The developer does not have the on-device information described in this section, so we cannot restore or delete it for you. To delete purchase information (Section 7), see <a href="#deletion">Section 13</a>.</p>
     </section>
 
     <section class="legal" id="s4">
@@ -142,46 +143,71 @@
       <p>The developer uses this information to confirm and restore purchases and to total sales. It is not used for advertising or tracking. To learn how RevenueCat handles information, see the <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</p>
       <p>Purchase information is retained as follows:</p>
       <ul>
-        <li>The developer keeps purchase information in RevenueCat without a fixed end date, so that purchases can be restored and subscription status can be checked. When you ask us to delete it, we delete it as described in <a href="#deletion">Section 12</a>.</li>
+        <li>The developer keeps purchase information in RevenueCat without a fixed end date, so that purchases can be restored and subscription status can be checked. When you ask us to delete it, we delete it as described in <a href="#deletion">Section 13</a>.</li>
         <li>According to RevenueCat's documentation, when the developer deletes a customer, all of that customer's data, including purchase history, is cleared. RevenueCat processes the deletion asynchronously.</li>
         <li>How long RevenueCat keeps information in backups or elsewhere follows RevenueCat's own policies. RevenueCat's Privacy Policy states that it retains personal data only as necessary to comply with its legal obligations.</li>
       </ul>
     </section>
 
+    <section class="legal" id="analytics">
+      <h2><span class="num">8</span>Usage Analytics (Firebase Analytics)</h2>
+<p>To improve the App, the developer uses Google's Firebase Analytics (Google Analytics for Firebase). We use it to learn which features are used and how often, where people stop using the App, and whether people keep using it. The App sends the following information to Google:</p>
+      <ul>
+        <li>App instance ID. Firebase creates this number automatically for each installation. It is not linked to your name or email address. The developer does not set a user ID.</li>
+        <li>Actions in the App. For example: screens you open, progress through onboarding, how many times you scan and how many price tags are read, manual entry, currency changes, actions in history and settings, and actions and results on ads and the paid-plan screen. Counts and durations are sent as ranges such as "4 or more" or "5–15 seconds."</li>
+        <li>App state. For example: the currency pair you chose, light or dark appearance, the type of paid plan, and the results of the tracking and ad-consent prompts.</li>
+        <li>Device and app information. For example: device model, operating system and version, language, app version, when you first opened the App, and session length.</li>
+        <li>Approximate region. Google estimates your country or region from your IP address. Precise (GPS) location is not used.</li>
+        <li>Purchase events. Google automatically records the type and price of paid-plan purchases.</li>
+        <li>Advertising identifiers. On iOS, the IDFA may be sent only if you allow tracking. On Android, the advertising ID may be sent. If you delete your advertising ID in your device settings, it is no longer sent (Section 6).</li>
+      </ul>
+      <p>The App does not send camera images, photos, recognized text and amounts, or the contents of your conversion history.</p>
+      <p>The developer uses this information only to improve the App and to measure how it is used. We do not use it for ad personalization or tracking. We do not use Google signals or link the data to Google Ads. The developer exports this information to Google BigQuery (a Google Cloud database) for analysis. Only the developer can access the BigQuery data, and we do not share it with third parties.</p>
+      <p>Consent works as follows:</p>
+      <ul>
+        <li>In regions where consent is required, such as the EEA, the UK, and Switzerland, the App follows the choices you make in the consent form described in Section 6. If you do not consent, Google does not store identifiers and uses the information only for aggregate modeling that is not linked to you. Before the consent form appears, the App does not send this information.</li>
+        <li>You can change your choices from "Privacy choices" in the App's settings.</li>
+        <li>On iOS, if you do not allow tracking, the IDFA is not sent.</li>
+      </ul>
+      <p>Retention: detailed data in the Google Analytics interface is deleted according to the Google Analytics data-retention setting. Data exported to BigQuery is kept without a fixed end date, so that we can compare long-term usage. Because the data is not linked to your name or email address, the developer cannot find a specific person's data. For deletion, see <a href="#deletion">Section 13</a>.</p>
+      <p>For how Google handles information, see <a href="https://support.google.com/analytics/answer/11593727" target="_blank" rel="noopener">Google Analytics data protection</a>, <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy and Security in Firebase</a>, and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+    </section>
+
     <section class="legal" id="s8">
-      <h2><span class="num">8</span>Information You Give Us When You Contact Us</h2>
+      <h2><span class="num">9</span>Information You Give Us When You Contact Us</h2>
 <p>If you email us, we use your email address, your name (if included), and the content of your message to reply to you. We keep it only as long as needed to reply, then delete it.</p>
     </section>
 
     <section class="legal" id="s9">
-      <h2><span class="num">9</span>Information We Do Not Collect</h2>
+      <h2><span class="num">10</span>Information We Do Not Collect</h2>
 <ul>
         <li>Your name, address, or phone number (unless you include them in a message to us)</li>
         <li>Contacts, microphone, or precise (GPS) location</li>
         <li>Camera images, photos, recognized text and amounts, or conversion history</li>
-        <li>Data from analytics or crash-reporting tools added by the developer (the App currently uses none; we will update this Policy if that changes)</li>
+        <li>Data from crash-reporting tools (the App currently uses none; we will update this Policy if that changes). For usage analytics, the App uses only Firebase Analytics, described in Section 8.</li>
       </ul>
       <p>We do not sell your personal information for money.</p>
     </section>
 
     <section class="legal" id="s10">
-      <h2><span class="num">10</span>Children</h2>
+      <h2><span class="num">11</span>Children</h2>
 <p>The App is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
     </section>
 
     <section class="legal" id="s11">
-      <h2><span class="num">11</span>Encryption in Transit and International Processing</h2>
-<p>All of the App's network communication is encrypted using HTTPS (TLS). This covers communication with the exchange-rate services, Google (AdMob and ML Kit), and RevenueCat.</p>
+      <h2><span class="num">12</span>Encryption in Transit and International Processing</h2>
+<p>All of the App's network communication is encrypted using HTTPS (TLS). This covers communication with the exchange-rate services, Google (AdMob, ML Kit, and Firebase Analytics), and RevenueCat.</p>
       <p>Because the App uses services from Google and RevenueCat, information may be processed in data centers outside Japan, including in the United States.</p>
     </section>
 
     <section class="legal" id="s12">
-      <h2 id="deletion"><span class="num">12</span>Deleting Your Data</h2>
+      <h2 id="deletion"><span class="num">13</span>Deleting Your Data</h2>
 <p>The App has no accounts. You can delete each type of information as follows:</p>
       <ul>
         <li>Information on your device (conversion history, exchange rates, and settings). You can delete history entries one by one in the App. On Android, uninstalling the App deletes all of it. On iPhone, the scan count and other information stored in the keychain may remain on the device. If information remains in an iPhone backup, please delete that backup as well (Section 3).</li>
         <li>Purchase information (RevenueCat). Email us at the address below to request deletion, and the developer will delete the purchase information recorded in RevenueCat.</li>
         <li>Advertising information (Google). The developer does not hold advertising data. You can delete or reset your advertising ID in your device settings (Section 6). For data held by Google, you can request deletion through Google's procedures.</li>
+        <li>Usage analytics information (Firebase Analytics). This information is not linked to your name or email address, so the developer cannot find a specific person's information. If you uninstall the App, the app instance ID on your device is deleted, and later information is no longer linked to it. In the EEA and similar regions, you can withdraw consent from "Privacy choices" in the App's settings (Section 8).</li>
       </ul>
       <p>When you request deletion of purchase information, please include one of the following in your email so that we can find your purchase:</p>
       <ul>
@@ -192,14 +218,14 @@
     </section>
 
     <section class="legal" id="s13">
-      <h2><span class="num">13</span>Changes to This Policy</h2>
+      <h2><span class="num">14</span>Changes to This Policy</h2>
 <p>We may update this Policy when laws change or when we add features. When we do, we will change the "Last updated" date on this page.</p>
     </section>
 
     <section class="legal" id="s14">
-      <h2><span class="num">14</span>Developer Information and Contact</h2>
+      <h2><span class="num">15</span>Developer Information and Contact</h2>
 <p>Provider: DefactoTech (Hiroaki Arimura)</p>
-      <p>For questions about this Policy or how information is handled, to exercise your rights, or to request deletion, please email the address below. For what to include in a deletion request, see <a href="#deletion">Section 12</a>.</p>
+      <p>For questions about this Policy or how information is handled, to exercise your rights, or to request deletion, please email the address below. For what to include in a deletion request, see <a href="#deletion">Section 13</a>.</p>
       <p><a class="contact" href="mailto:support@defactotech.app?subject=RateLenz%20Privacy">support@defactotech.app</a></p>
       <p>If this English version differs from the Japanese version, the Japanese version prevails.</p>
     </section>
@@ -211,7 +237,7 @@
       <a href="../../terms/en/">Terms of Use</a>
       <a href="../ja/">日本語</a>
     </div>
-    <div>© 2026 RateLenz · Effective: 2026-10-23 · Last updated: 2026-11-15</div>
+    <div>© 2026 RateLenz · Effective: 2026-10-23 · Last updated: 2026-11-18</div>
   </footer>
 </body>
 </html>

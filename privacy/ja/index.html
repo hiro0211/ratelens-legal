@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>プライバシーポリシー — RateLenz</title>
-  <meta name="description" content="RateLenz のプライバシーポリシー。端末内での文字の読み取り、履歴の保存、為替レートの取得、Google AdMob と RevenueCat について。" />
+  <meta name="description" content="RateLenz のプライバシーポリシー。端末内での文字の読み取り、履歴の保存、為替レートの取得、Google AdMob、RevenueCat、Firebase Analytics について。" />
   <link rel="alternate" hreflang="ja" href="https://hiro0211.github.io/ratelens-legal/privacy/ja/" />
   <link rel="alternate" hreflang="en" href="https://hiro0211.github.io/ratelens-legal/privacy/en/" />
   <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
@@ -26,7 +26,7 @@
     <div class="hero">
       <p class="eyebrow">Privacy Policy</p>
       <h1>プライバシーポリシー</h1>
-      <p class="meta">制定日: 2026-10-23 / 最終更新日: 2026-11-15</p>
+      <p class="meta">制定日: 2026-10-23 / 最終更新日: 2026-11-18</p>
     </div>
 
     <nav class="toc" aria-label="目次">
@@ -39,6 +39,7 @@
         <li><a href="#s5">広告（Google AdMob）とトラッキング</a></li>
         <li><a href="#s6">広告の同意（EEA・英国など）</a></li>
         <li><a href="#s7">有料プラン（RateLenz Premium）と RevenueCat</a></li>
+        <li><a href="#analytics">利用状況の分析（Firebase Analytics）</a></li>
         <li><a href="#s8">お問い合わせのときに受け取る情報</a></li>
         <li><a href="#s9">集めない情報</a></li>
         <li><a href="#s10">子どもの情報</a></li>
@@ -53,7 +54,7 @@
       <h2><span class="num">1</span>はじめに</h2>
 <p>このプライバシーポリシー（以下「本ポリシー」）では、アプリ「RateLenz」（以下「本アプリ」）が情報をどう扱うかを説明します。本アプリは DefactoTech（有村大旭、Hiroaki Arimura。以下「開発者」）が提供しています。</p>
       <p>本アプリは、カメラに写った値札の価格を読み取り、あなたが選んだ通貨に換算して表示します。アカウント登録とログインはありません。開発者は自分のサーバーを運営しておらず、氏名・住所・電話番号の入力も求めません。</p>
-      <p>本アプリは、広告の配信に Google AdMob を、有料プランの購入の管理に RevenueCat を使います。これらのサービスに送られる情報は、5〜7 章で説明します。</p>
+      <p>本アプリは、広告の配信に Google AdMob を、有料プランの購入の管理に RevenueCat を、利用状況の分析に Google の Firebase Analytics を使います。これらのサービスに送られる情報は、5〜8 章で説明します。</p>
     </section>
 
     <section class="legal" id="s2">
@@ -84,7 +85,7 @@
         <li>iPhone: 履歴と設定は、iCloud やパソコンへの端末のバックアップに含まれることがあります。iCloud バックアップは Apple が保存し、開発者は見られません。バックアップに残したくないときは、端末の設定で本アプリのバックアップを止めるか、バックアップを削除してください。</li>
         <li>iPhone: 次の情報は、iPhone のキーチェーンに保存します。その日にかざした回数、広告の表示間隔の日時、初めて開いた日時、購入の状態の控えです。削除と再インストールで回数が戻らないようにするためです。キーチェーンの情報は、本アプリを削除しても端末に残り、バックアップにも含まれることがあります。</li>
       </ul>
-      <p>開発者は、この章で挙げた端末の中の情報を持っていません。そのため、その復元や削除の代行はできません。購入の情報（7 章）の削除は、<a href="#deletion">12 章</a> をご覧ください。</p>
+      <p>開発者は、この章で挙げた端末の中の情報を持っていません。そのため、その復元や削除の代行はできません。購入の情報（7 章）の削除は、<a href="#deletion">13 章</a> をご覧ください。</p>
     </section>
 
     <section class="legal" id="s4">
@@ -142,46 +143,71 @@
       <p>開発者は、これらの情報を購入の確認、購入の復元、売上の集計に使います。広告やトラッキングには使いません。RevenueCat による情報の扱いは <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat のプライバシーポリシー</a> をご覧ください。</p>
       <p>購入の情報の保存期間は次のとおりです。</p>
       <ul>
-        <li>開発者は、購入の情報を期限を決めずに RevenueCat に残します。購入の復元と、サブスクリプションの状態の確認に使うためです。あなたから削除の依頼を受けたときは、<a href="#deletion">12 章</a> の手順で削除します。</li>
+        <li>開発者は、購入の情報を期限を決めずに RevenueCat に残します。購入の復元と、サブスクリプションの状態の確認に使うためです。あなたから削除の依頼を受けたときは、<a href="#deletion">13 章</a> の手順で削除します。</li>
         <li>開発者が削除すると、RevenueCat の案内では、その利用者の購入の履歴を含むすべてのデータが消されます。削除の処理は RevenueCat の中で順番に進みます。</li>
         <li>RevenueCat がバックアップなどにいつまで情報を残すかは、RevenueCat の方針に従います。RevenueCat のプライバシーポリシーには、法令の義務を守るのに必要な範囲で保存すると書かれています。</li>
       </ul>
     </section>
 
+    <section class="legal" id="analytics">
+      <h2><span class="num">8</span>利用状況の分析（Firebase Analytics）</h2>
+<p>開発者は、本アプリを改善するため、Google の Firebase Analytics（Google アナリティクス for Firebase）を使います。どの機能がどれだけ使われているか、どこで使うのをやめているか、続けて使われているかを調べるためです。本アプリから Google に次の情報が送られます。</p>
+      <ul>
+        <li>アプリインスタンス ID。Firebase がインストールごとに自動で作る番号です。名前やメールアドレスとは結び付きません。開発者は、ユーザー ID を設定しません。</li>
+        <li>アプリの中での操作。開いた画面、オンボーディングの進み具合、かざした回数と読み取れた値札の数、手入力、通貨の切り替え、履歴と設定の操作、広告と課金画面の操作と結果などです。回数や時間は「4 回以上」「5〜15 秒」のような区分で送ります。</li>
+        <li>アプリの状態。選んだ通貨の組み合わせ、表示の明暗、有料プランの種類、トラッキングと広告の同意の結果などです。</li>
+        <li>端末とアプリの情報。機種、OS とそのバージョン、言語、アプリのバージョン、初めて開いた日時、セッションの長さなどです。</li>
+        <li>おおよその地域。Google が IP アドレスから国や地域を推定します。正確な位置情報（GPS）は使いません。</li>
+        <li>購入のイベント。有料プランの購入の種類と金額を、Google が自動で記録します。</li>
+        <li>広告の識別子。iOS では、あなたがトラッキングを許可したときだけ、IDFA が送られることがあります。Android では広告 ID が送られることがあります。端末の設定で広告 ID を削除すると送られなくなります（6 章）。</li>
+      </ul>
+      <p>カメラの映像、写真、読み取った文字と金額、換算の履歴の中身は送りません。</p>
+      <p>開発者は、この情報を本アプリの改善と利用状況の集計だけに使います。広告のパーソナライズやトラッキングには使いません。Google シグナルと Google 広告とのリンクは使っていません。開発者は、この情報を Google の BigQuery（Google Cloud のデータベース）に書き出して集計します。BigQuery のデータは開発者だけが見られ、第三者には渡しません。</p>
+      <p>同意の扱いは次のとおりです。</p>
+      <ul>
+        <li>EEA・英国・スイスなど同意が必要な地域では、6 章の同意の画面で選んだ内容に従います。同意しなかったときは、Google は識別子を保存せず、個人に結び付かない集計の推定にだけ情報を使います。同意の画面が出る前は、本アプリは情報を送りません。</li>
+        <li>同意の内容は、アプリの設定画面の「プライバシーの選択」から変えられます。</li>
+        <li>iOS でトラッキングを許可しなかったときは、IDFA は送られません。</li>
+      </ul>
+      <p>保存期間は次のとおりです。Google アナリティクスの画面の中の詳細なデータは、Google アナリティクスの保持期間の設定に従って消えます。BigQuery に書き出したデータは、続けて使われているかを長く比べるため、期限を決めずに保存します。データは名前やメールアドレスと結び付いていないため、開発者は特定の人のデータを見つけられません。そのため、削除の扱いは <a href="#deletion">13 章</a> をご覧ください。</p>
+      <p>Google による情報の扱いは、<a href="https://support.google.com/analytics/answer/11593727" target="_blank" rel="noopener">Google アナリティクスのデータの保護</a>、<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a>、<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a> をご覧ください。</p>
+    </section>
+
     <section class="legal" id="s8">
-      <h2><span class="num">8</span>お問い合わせのときに受け取る情報</h2>
+      <h2><span class="num">9</span>お問い合わせのときに受け取る情報</h2>
 <p>あなたがメールで問い合わせたときは、返信のために、メールアドレス、お名前（書かれていた場合）、本文を使います。返信に必要な期間だけ保管し、その後削除します。</p>
     </section>
 
     <section class="legal" id="s9">
-      <h2><span class="num">9</span>集めない情報</h2>
+      <h2><span class="num">10</span>集めない情報</h2>
 <ul>
         <li>氏名、住所、電話番号（問い合わせのメールに書かれた場合を除く）</li>
         <li>連絡先、マイク、正確な位置情報（GPS）</li>
         <li>カメラの映像、写真、読み取った文字と金額、換算の履歴</li>
-        <li>開発者が独自に入れたアクセス解析やクラッシュ解析のツールによるデータ（現在は使っていません。使う場合は本ポリシーを更新します）</li>
+        <li>クラッシュ解析のツールによるデータ（現在は使っていません。使う場合は本ポリシーを更新します）。利用状況の分析は 8 章の Firebase Analytics だけを使います。</li>
       </ul>
       <p>開発者は、個人情報をお金と引き換えに販売しません。</p>
     </section>
 
     <section class="legal" id="s10">
-      <h2><span class="num">10</span>子どもの情報</h2>
+      <h2><span class="num">11</span>子どもの情報</h2>
 <p>本アプリは 13 歳未満の子どもを対象にしていません。開発者は、13 歳未満の子どもの個人情報を知りながら集めることはありません。</p>
     </section>
 
     <section class="legal" id="s11">
-      <h2><span class="num">11</span>通信の暗号化と海外での処理</h2>
-<p>本アプリの通信は、すべて HTTPS（TLS）で暗号化します。為替レートのサービス、Google（AdMob と ML Kit）、RevenueCat との通信が対象です。</p>
+      <h2><span class="num">12</span>通信の暗号化と海外での処理</h2>
+<p>本アプリの通信は、すべて HTTPS（TLS）で暗号化します。為替レートのサービス、Google（AdMob、ML Kit、Firebase Analytics）、RevenueCat との通信が対象です。</p>
       <p>本アプリは Google や RevenueCat のサービスを使います。そのため、情報は米国など日本以外の国のデータセンターで処理されることがあります。</p>
     </section>
 
     <section class="legal" id="s12">
-      <h2 id="deletion"><span class="num">12</span>データの削除</h2>
+      <h2 id="deletion"><span class="num">13</span>データの削除</h2>
 <p>本アプリにアカウントはありません。消したい情報の種類ごとに、次の方法で削除できます。</p>
       <ul>
         <li>端末の中の情報（換算の履歴、為替レート、設定）。履歴は、アプリの中で 1 件ずつ削除できます。Android では、本アプリを端末から削除するとすべて消えます。iPhone では、キーチェーンに保存した回数などが端末に残ることがあります。iPhone のバックアップに残っている場合は、バックアップも削除してください（3 章）。</li>
         <li>購入の情報（RevenueCat）。下記のメールアドレスに削除を依頼してください。開発者が RevenueCat に記録された購入の情報を削除します。</li>
         <li>広告の情報（Google）。開発者は広告のデータを持っていません。広告 ID は、端末の設定で削除またはリセットできます（6 章）。Google が持つデータは、Google の手続きで削除を依頼できます。</li>
+        <li>利用状況の分析の情報（Firebase Analytics）。この情報は名前やメールアドレスと結び付いていないため、開発者は特定の人の情報を見つけられません。本アプリを削除すると、端末のアプリインスタンス ID が消え、それ以降の情報とは結び付かなくなります。EEA などでは、設定画面の「プライバシーの選択」で同意を取り消せます（8 章）。</li>
       </ul>
       <p>購入の情報の削除を依頼するときは、あなたの購入を見つけるため、次のどちらかをメールに書いてください。</p>
       <ul>
@@ -192,14 +218,14 @@
     </section>
 
     <section class="legal" id="s13">
-      <h2><span class="num">13</span>本ポリシーの変更</h2>
+      <h2><span class="num">14</span>本ポリシーの変更</h2>
 <p>開発者は、法律の変更や機能の追加に合わせて本ポリシーを変更することがあります。変更したときは、このページの「最終更新日」を改めます。</p>
     </section>
 
     <section class="legal" id="s14">
-      <h2><span class="num">14</span>運営者とお問い合わせ先</h2>
+      <h2><span class="num">15</span>運営者とお問い合わせ先</h2>
 <p>提供者: DefactoTech（有村大旭、Hiroaki Arimura）</p>
-      <p>本ポリシーや情報の扱いについてのご質問、権利の行使、削除の依頼は、下記のメールアドレスまでお送りください。削除の依頼の書き方は <a href="#deletion">12 章</a> をご覧ください。</p>
+      <p>本ポリシーや情報の扱いについてのご質問、権利の行使、削除の依頼は、下記のメールアドレスまでお送りください。削除の依頼の書き方は <a href="#deletion">13 章</a> をご覧ください。</p>
       <p><a class="contact" href="mailto:support@defactotech.app?subject=RateLenz%20Privacy">support@defactotech.app</a></p>
     </section>
   </main>
@@ -210,7 +236,7 @@
       <a href="../../terms/ja/">利用規約</a>
       <a href="../en/">English</a>
     </div>
-    <div>© 2026 RateLenz · 制定日: 2026-10-23 · 最終更新日: 2026-11-15</div>
+    <div>© 2026 RateLenz · 制定日: 2026-10-23 · 最終更新日: 2026-11-18</div>
   </footer>
 </body>
 </html>
